@@ -1,0 +1,5 @@
+# Demo de portafolio (negocio ficticio): no debe indexarse.
+# Nota: robots.txt solo tiene efecto en la raíz del dominio. En el portafolio, el bloqueo real
+# lo hacen la meta "noindex" de cada página y la cabecera X-Robots-Tag configurada en next.config.
+User-agent: *
+Disallow: /demos/sitio-web-negocio/

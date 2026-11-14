@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Sitemap de la demo. No se enlaza desde robots.txt del portafolio porque las páginas llevan noindex. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://tu-dominio.com/demos/sitio-web-negocio/</loc><lastmod>2026-11-13</lastmod><priority>1.0</priority></url>
+  <url><loc>https://tu-dominio.com/demos/sitio-web-negocio/catalogo.html</loc><lastmod>2026-11-13</lastmod><priority>0.9</priority></url>
+  <url><loc>https://tu-dominio.com/demos/sitio-web-negocio/servicio-tecnico.html</loc><lastmod>2026-11-13</lastmod><priority>0.8</priority></url>
+  <url><loc>https://tu-dominio.com/demos/sitio-web-negocio/nosotros.html</loc><lastmod>2026-11-13</lastmod><priority>0.6</priority></url>
+  <url><loc>https://tu-dominio.com/demos/sitio-web-negocio/blog.html</loc><lastmod>2026-11-13</lastmod><priority>0.6</priority></url>
+  <url><loc>https://tu-dominio.com/demos/sitio-web-negocio/contacto.html</loc><lastmod>2026-11-13</lastmod><priority>0.7</priority></url>
+</urlset>
