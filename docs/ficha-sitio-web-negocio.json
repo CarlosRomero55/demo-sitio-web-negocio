@@ -1,0 +1,66 @@
+{
+  "slug": "sitio-web-negocio",
+  "servicioRelacionado": "Diseño de páginas web",
+  "demoUrl": "/demos/sitio-web-negocio/",
+  "imagen": "/demos/sitio-web-negocio/img/capturas/inicio-escritorio.webp",
+  "imagenMovil": "/demos/sitio-web-negocio/img/capturas/inicio-movil.webp",
+  "lighthouse": { "performance": 100, "accessibility": 100, "bestPractices": 100, "seo": 100, "notaSeo": "SEO 100 sin noindex; la demo publicada lleva noindex a propósito (63–66)." },
+  "es": {
+    "titulo": "Sitio web para tienda de repuestos de línea blanca",
+    "resumen": "Sitio completo de 7 páginas para Refri House, una tienda ficticia de repuestos y servicio técnico en Guayaquil: catálogo con buscador, cotización por WhatsApp, agenda de técnicos y formulario seguro. Lighthouse 100 en rendimiento, accesibilidad y buenas prácticas.",
+    "problema": "Los negocios de repuestos atienden casi todo por teléfono y WhatsApp: el cliente no sabe qué pieza necesita, pregunta precios uno por uno y el vendedor repite la misma información todo el día. Sin presencia web, el negocio no aparece cuando alguien busca un repuesto en Google.",
+    "solucion": "Un sitio rápido y fácil de usar desde el celular que muestra el catálogo con precios referenciales, ayuda al cliente a identificar su repuesto y convierte cada visita en una cotización por WhatsApp con el producto ya escrito. El servicio técnico se agenda en línea, conectado con el sistema de citas y facturación.",
+    "funcionalidades": [
+      "Inicio con buscador de repuestos, categorías, productos más pedidos, cifras, testimonios y preguntas frecuentes",
+      "Catálogo de 24 repuestos con búsqueda sin tildes, filtros por categoría, orden por precio y enlaces filtrados",
+      "Botón Cotizar que abre WhatsApp con el nombre y código del repuesto",
+      "Página de servicio técnico con precios, duración y agenda conectada a la demo de citas",
+      "Nosotros con historia, equipo, valores y galería con lightbox accesible por teclado",
+      "Blog con 3 artículos de consejos técnicos",
+      "Formulario de contacto con validación de teléfono ecuatoriano y resumen de errores accesible",
+      "Mapa que solo se carga bajo demanda",
+      "Modo oscuro automático y manual",
+      "Menú móvil accesible, botón flotante de WhatsApp y página 404 personalizada"
+    ],
+    "stack": ["HTML5 semántico", "CSS moderno (custom properties, grid, clamp)", "JavaScript vanilla", "SVG propios", "Schema.org JSON-LD", "Lighthouse", "html-validate", "Playwright"],
+    "seguridad": [
+      "Content Security Policy sin scripts ni estilos en línea",
+      "Datos del usuario insertados solo con textContent (sin riesgo de XSS)",
+      "Honeypot anti-spam y tiempo mínimo de llenado",
+      "Límite de 3 envíos por sesión",
+      "Enlaces externos con rel=\"noopener noreferrer\"",
+      "Mapa de terceros solo con permiso del visitante",
+      "El formulario de la demo no envía ni guarda datos",
+      "Sin claves ni scripts de terceros"
+    ]
+  },
+  "en": {
+    "titulo": "Website for a home appliance spare parts store",
+    "resumen": "A complete 7-page website for Refri House, a fictional spare parts and repair shop in Guayaquil: searchable catalog, WhatsApp quotes, technician booking and a secure contact form. Lighthouse 100 in performance, accessibility and best practices.",
+    "problema": "Spare parts shops handle almost everything by phone and WhatsApp: customers don't know which part they need, ask for prices one by one, and staff repeat the same information all day. Without a website, the business doesn't show up when someone searches for a part on Google.",
+    "solucion": "A fast, mobile-first website that shows the catalog with reference prices, helps customers identify their part, and turns each visit into a WhatsApp quote with the product already filled in. Repair visits are booked online, connected to the appointments and invoicing system.",
+    "funcionalidades": [
+      "Home page with part search, categories, best sellers, key figures, testimonials and FAQ",
+      "Catalog of 24 parts with accent-insensitive search, category filters, price sorting and pre-filtered links",
+      "Quote button that opens WhatsApp with the part name and code",
+      "Repair service page with prices, duration and booking linked to the appointments demo",
+      "About page with history, team, values and a keyboard-accessible lightbox gallery",
+      "Blog with 3 technical tips articles",
+      "Contact form with Ecuadorian phone validation and an accessible error summary",
+      "Map loaded only on demand",
+      "Automatic and manual dark mode",
+      "Accessible mobile menu, floating WhatsApp button and custom 404 page"
+    ],
+    "stack": ["Semantic HTML5", "Modern CSS (custom properties, grid, clamp)", "Vanilla JavaScript", "Custom SVGs", "Schema.org JSON-LD", "Lighthouse", "html-validate", "Playwright"],
+    "seguridad": [
+      "Content Security Policy with no inline scripts or styles",
+      "User input rendered only with textContent (no XSS risk)",
+      "Anti-spam honeypot and minimum fill time",
+      "Limit of 3 submissions per session",
+      "External links with rel=\"noopener noreferrer\"",
+      "Third-party map loaded only with the visitor's consent",
+      "The demo form does not send or store any data",
+      "No API keys or unnecessary third-party scripts"
+    ]
+  }
+}
