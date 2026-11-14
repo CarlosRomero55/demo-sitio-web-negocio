@@ -1,0 +1,131 @@
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="container">
+        <p class="eyebrow">Contacto</p>
+        <h1 id="page-title">¿En qué te podemos ayudar?</h1>
+        <p class="lead">Cotiza un repuesto, agenda un técnico o consulta por una garantía. Por WhatsApp respondemos más rápido; si prefieres, déjanos tu mensaje aquí.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-label="Formulario e información de contacto">
+      <div class="container contact-grid">
+        <div class="form-card">
+          <h2>Escríbenos</h2>
+          <p class="muted">Los campos con <span aria-hidden="true">*</span><span class="sr-only">asterisco</span> son obligatorios.</p>
+
+          <div class="form-alert" id="form-errors" role="alert" tabindex="-1" hidden>
+            <strong>Revisa los siguientes campos:</strong>
+            <ul id="form-errors-list"></ul>
+          </div>
+
+          <form id="contact-form" novalidate>
+            <div class="field">
+              <label for="nombre">Nombre y apellido <span aria-hidden="true">*</span></label>
+              <input id="nombre" name="nombre" type="text" autocomplete="name" required minlength="3" maxlength="60" aria-describedby="nombre-err">
+              <p class="field-error" id="nombre-err"></p>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="telefono">Teléfono <span aria-hidden="true">*</span></label>
+                <input id="telefono" name="telefono" type="tel" inputmode="tel" autocomplete="tel" required maxlength="16" placeholder="09XXXXXXXX" aria-describedby="telefono-hint telefono-err">
+                <p class="field-hint" id="telefono-hint">Celular (09…) o fijo con código de provincia (04…).</p>
+                <p class="field-error" id="telefono-err"></p>
+              </div>
+              <div class="field">
+                <label for="correo">Correo electrónico <span aria-hidden="true">*</span></label>
+                <input id="correo" name="correo" type="email" autocomplete="email" required maxlength="80" placeholder="tu@correo.com" aria-describedby="correo-err">
+                <p class="field-error" id="correo-err"></p>
+              </div>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="motivo">Motivo <span aria-hidden="true">*</span></label>
+                <select id="motivo" name="motivo" required aria-describedby="motivo-err">
+                  <option value="">Selecciona una opción</option>
+                  <option>Cotizar un repuesto</option>
+                  <option>Servicio técnico</option>
+                  <option>Garantía</option>
+                  <option>Ventas para técnicos y negocios</option>
+                  <option>Otro</option>
+                </select>
+                <p class="field-error" id="motivo-err"></p>
+              </div>
+              <div class="field">
+                <label for="equipo">Equipo y modelo <span class="opt">(opcional)</span></label>
+                <input id="equipo" name="equipo" type="text" maxlength="60" placeholder="Ej.: Refrigeradora, modelo RX-500">
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="mensaje">Mensaje <span aria-hidden="true">*</span></label>
+              <textarea id="mensaje" name="mensaje" rows="5" required minlength="10" maxlength="600" aria-describedby="mensaje-count mensaje-err"></textarea>
+              <p class="field-hint" id="mensaje-count" aria-live="polite">0 / 600</p>
+              <p class="field-error" id="mensaje-err"></p>
+            </div>
+
+            <!-- Honeypot anti-spam: invisible para personas, los bots suelen llenarlo -->
+            <div class="hp" aria-hidden="true">
+              <label for="empresa">Empresa (no llenar)</label>
+              <input id="empresa" name="empresa" type="text" tabindex="-1" autocomplete="off">
+            </div>
+
+            <div class="field field--check">
+              <input id="consentimiento" name="consentimiento" type="checkbox" required aria-describedby="consentimiento-err">
+              <label for="consentimiento">Acepto el tratamiento de mis datos personales para responder esta consulta, según el <a href="#privacidad">aviso de privacidad</a>. <span aria-hidden="true">*</span></label>
+              <p class="field-error" id="consentimiento-err"></p>
+            </div>
+
+            <button class="btn btn--accent btn--block" type="submit" id="enviar" disabled>Enviar mensaje</button>
+            <noscript><p class="field-hint">El formulario necesita JavaScript. También puedes escribirnos por WhatsApp.</p></noscript>
+            <p class="demo-note-form">Demo: el formulario valida los datos pero <strong>no envía ni guarda</strong> información.</p>
+          </form>
+
+          <div class="form-success" id="form-success" role="status" tabindex="-1" hidden>
+            <svg aria-hidden="true"><use href="img/icons.svg#i-check"/></svg>
+            <h3 id="success-title">¡Mensaje listo!</h3>
+            <p id="success-text"></p>
+            <button type="button" class="btn btn--ghost btn--sm" id="otro-mensaje">Escribir otro mensaje</button>
+          </div>
+        </div>
+
+        <aside class="contact-info" aria-label="Datos de contacto">
+          <a class="btn btn--wa btn--block" href="https://wa.me/593900000000?text=Hola%20Refri%20House%2C%20tengo%20una%20consulta." target="_blank" rel="noopener noreferrer">
+            <svg aria-hidden="true"><use href="img/icons.svg#i-whatsapp"/></svg>
+            Escríbenos por WhatsApp
+          </a>
+          <ul class="info-list">
+            <li><svg aria-hidden="true"><use href="img/icons.svg#i-pin"/></svg><span><strong>Dirección</strong>Av. Ficticia 123 y Calle Demo, Guayaquil (dirección de ejemplo)</span></li>
+            <li><svg aria-hidden="true"><use href="img/icons.svg#i-phone"/></svg><span><strong>Teléfono</strong><a href="tel:+59340000000">(04)&nbsp;000&#8209;0000</a></span></li>
+            <li><svg aria-hidden="true"><use href="img/icons.svg#i-mail"/></svg><span><strong>Correo</strong><a href="mailto:hola@refrihouse.example">hola@refrihouse.example</a></span></li>
+            <li><svg aria-hidden="true"><use href="img/icons.svg#i-clock"/></svg><span><strong>Horarios</strong>Lunes a viernes: 08:30 – 18:30<br>Sábados: 09:00 – 14:00<br>Domingos y feriados: cerrado</span></li>
+          </ul>
+
+          <div class="map" id="map">
+            <div class="map-placeholder" id="map-placeholder">
+              <svg aria-hidden="true"><use href="img/icons.svg#i-pin"/></svg>
+              <p>El mapa se carga desde OpenStreetMap solo si lo pides, para que la página sea más rápida y no comparta datos sin tu permiso.</p>
+              <button type="button" class="btn btn--primary btn--sm" id="load-map">Ver mapa</button>
+            </div>
+          </div>
+          <p class="field-hint">Ubicación referencial en Guayaquil: el negocio es ficticio.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="privacidad" aria-labelledby="priv-title">
+      <div class="container narrow">
+        <p class="eyebrow">Aviso de privacidad</p>
+        <h2 id="priv-title">Cómo tratamos tus datos</h2>
+        <p class="muted">Texto de ejemplo para la demo, inspirado en la Ley Orgánica de Protección de Datos Personales del Ecuador (LOPDP). En un sitio real debe redactarlo o revisarlo un profesional.</p>
+        <ul class="privacy-list">
+          <li><strong>Responsable:</strong> Refri House (negocio ficticio), Guayaquil.</li>
+          <li><strong>Datos que pedimos:</strong> nombre, teléfono, correo, equipo y el mensaje que nos escribes.</li>
+          <li><strong>Finalidad:</strong> responder tu consulta, cotizar y agendar servicios. No enviamos publicidad sin tu autorización.</li>
+          <li><strong>Base legal:</strong> tu consentimiento, que puedes retirar en cualquier momento.</li>
+          <li><strong>Conservación:</strong> hasta 12 meses después de tu última consulta, salvo obligaciones tributarias.</li>
+          <li><strong>Tus derechos:</strong> acceso, rectificación, eliminación, oposición y portabilidad, escribiendo a hola@refrihouse.example.</li>
+          <li><strong>En esta demo:</strong> el formulario no envía ni almacena ningún dato. Solo se guarda en tu navegador un contador de envíos de la sesión, que se borra al cerrar la pestaña.</li>
+        </ul>
+      </div>
+    </section>

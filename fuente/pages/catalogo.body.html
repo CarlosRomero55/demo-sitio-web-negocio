@@ -1,0 +1,75 @@
+    <section class="page-hero" aria-labelledby="page-title">
+      <div class="container">
+        <p class="eyebrow">Catálogo</p>
+        <h1 id="page-title">Repuestos para tu línea blanca</h1>
+        <p class="lead">Busca por nombre, código o tipo de equipo. Los precios son referenciales en USD con IVA; te confirmamos stock y compatibilidad por WhatsApp antes de pagar.</p>
+      </div>
+    </section>
+
+    <section class="section section--tight" aria-label="Listado de repuestos">
+      <div class="container">
+        <div class="toolbar">
+          <form class="search search--flat" role="search" id="cat-search">
+            <label>
+              <svg aria-hidden="true"><use href="img/icons.svg#i-search"/></svg>
+              <span class="sr-only">Buscar repuesto por nombre, código o compatibilidad</span>
+              <input type="search" name="q" id="q" placeholder="Ej.: compresor, LV-BMB-110, 18.000 BTU…" autocomplete="off" maxlength="60">
+            </label>
+            <button type="submit" class="sr-only">Buscar</button>
+          </form>
+          <div class="sort">
+            <label for="orden">Ordenar por</label>
+            <select id="orden" name="orden">
+              <option value="relevancia">Relevancia</option>
+              <option value="precio-asc">Precio: menor a mayor</option>
+              <option value="precio-desc">Precio: mayor a menor</option>
+              <option value="nombre">Nombre (A–Z)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="chips" role="group" aria-label="Filtrar por categoría">
+            <button type="button" class="chip" data-cat="" aria-pressed="true">Todos <span class="chip-n">{{TOTAL}}</span></button>
+{{CHIPS}}
+        </div>
+
+        <p class="result-count" id="result-count" role="status" aria-live="polite">Mostrando {{TOTAL}} repuestos</p>
+
+        <h2 class="sr-only">Listado de repuestos</h2>
+        <div class="prod-grid prod-grid--compact" id="prod-grid">
+{{PRODUCTOS}}
+        </div>
+
+        <div class="empty" id="empty" hidden>
+          <svg aria-hidden="true"><use href="img/icons.svg#i-search"/></svg>
+          <h2>No encontramos ese repuesto en el catálogo en línea</h2>
+          <p>Tenemos más de 3.500 referencias en bodega. Envíanos la foto de la placa de tu equipo y te ayudamos a encontrarlo.</p>
+          <a class="btn btn--wa" id="empty-wa" href="https://wa.me/593900000000?text=Hola%20Refri%20House%2C%20busco%20un%20repuesto%20que%20no%20encontr%C3%A9%20en%20el%20cat%C3%A1logo." target="_blank" rel="noopener noreferrer">
+            <svg aria-hidden="true"><use href="img/icons.svg#i-whatsapp"/></svg>
+            Preguntar por WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" aria-labelledby="help-title">
+      <div class="container help-grid">
+        <div>
+          <p class="eyebrow">¿Cómo identifico mi repuesto?</p>
+          <h2 id="help-title">La placa de tu equipo tiene la respuesta</h2>
+          <p class="muted">Toda refrigeradora, lavadora, cocina o split tiene una etiqueta con la marca, el modelo y el número de serie. Con esa foto encontramos la pieza exacta.</p>
+          <ul class="checklist">
+            <li><svg aria-hidden="true"><use href="img/icons.svg#i-check"/></svg><span><strong>Refrigeradora:</strong> dentro del compartimiento, en la pared lateral o detrás del cajón de verduras.</span></li>
+            <li><svg aria-hidden="true"><use href="img/icons.svg#i-check"/></svg><span><strong>Lavadora:</strong> bajo la tapa, en la parte trasera o en el marco de la puerta (carga frontal).</span></li>
+            <li><svg aria-hidden="true"><use href="img/icons.svg#i-check"/></svg><span><strong>Cocina:</strong> al abrir el horno o en el cajón inferior.</span></li>
+            <li><svg aria-hidden="true"><use href="img/icons.svg#i-check"/></svg><span><strong>Aire acondicionado:</strong> en el costado de la unidad interior y de la condensadora.</span></li>
+          </ul>
+        </div>
+        <div class="help-card">
+          <h3>¿Prefieres que lo instalemos?</h3>
+          <p class="muted">Nuestro servicio técnico lleva el repuesto y lo instala con garantía de mano de obra.</p>
+          <a class="btn btn--accent btn--block" href="servicio-tecnico.html">Ver servicio técnico</a>
+          <a class="btn btn--ghost btn--block" href="contacto.html">Escríbenos</a>
+        </div>
+      </div>
+    </section>
