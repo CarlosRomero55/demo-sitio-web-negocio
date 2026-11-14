@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 460" width="520" height="460" role="img" aria-labelledby="t">
+  <title id="t">Ilustración de una refrigeradora, una lavadora y un aire acondicionado con herramientas y repuestos</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#D9E9F8"/>
+      <stop offset="1" stop-color="#BBD6F0"/>
+    </linearGradient>
+    <linearGradient id="steel" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#E3EAF2"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#9CC7EE"/>
+      <stop offset="1" stop-color="#4E8FCB"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Fondo -->
+  <circle cx="270" cy="235" r="200" fill="url(#bg)"/>
+  <circle cx="440" cy="90" r="34" fill="#F28C28" opacity=".18"/>
+  <ellipse cx="265" cy="420" rx="210" ry="16" fill="#0B4F8A" opacity=".12"/>
+
+  <!-- Aire acondicionado split -->
+  <g transform="translate(250 52)">
+    <rect width="210" height="62" rx="14" fill="url(#steel)" stroke="#B9C7D6" stroke-width="2"/>
+    <rect x="14" y="40" width="182" height="8" rx="4" fill="#C9D6E4"/>
+    <circle cx="186" cy="18" r="4" fill="#22C55E"/>
+    <rect x="20" y="14" width="60" height="6" rx="3" fill="#D6E0EA"/>
+    <g stroke="#7FB2E3" stroke-width="3" stroke-linecap="round" fill="none" opacity=".9">
+      <path d="M40 72 q8 10 0 20 q-8 10 0 20"/>
+      <path d="M100 72 q8 10 0 20 q-8 10 0 20"/>
+      <path d="M160 72 q8 10 0 20 q-8 10 0 20"/>
+    </g>
+  </g>
+
+  <!-- Refrigeradora -->
+  <g transform="translate(92 92)">
+    <rect width="150" height="318" rx="16" fill="url(#steel)" stroke="#B9C7D6" stroke-width="2"/>
+    <line x1="0" y1="112" x2="150" y2="112" stroke="#B9C7D6" stroke-width="2"/>
+    <rect x="124" y="30" width="8" height="56" rx="4" fill="#9FB1C4"/>
+    <rect x="124" y="136" width="8" height="90" rx="4" fill="#9FB1C4"/>
+    <rect x="20" y="26" width="58" height="34" rx="6" fill="#0B4F8A"/>
+    <text x="49" y="49" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#FFFFFF" text-anchor="middle">4°C</text>
+    <rect x="12" y="300" width="18" height="10" rx="3" fill="#9FB1C4"/>
+    <rect x="120" y="300" width="18" height="10" rx="3" fill="#9FB1C4"/>
+    <!-- copo -->
+    <g transform="translate(52 180)" stroke="#5AA9F0" stroke-width="5" stroke-linecap="round">
+      <line x1="0" y1="-26" x2="0" y2="26"/>
+      <line x1="-22.5" y1="-13" x2="22.5" y2="13"/>
+      <line x1="-22.5" y1="13" x2="22.5" y2="-13"/>
+    </g>
+  </g>
+
+  <!-- Lavadora -->
+  <g transform="translate(262 220)">
+    <rect width="168" height="190" rx="16" fill="url(#steel)" stroke="#B9C7D6" stroke-width="2"/>
+    <rect x="0" y="0" width="168" height="40" rx="16" fill="#E3EAF2"/>
+    <rect x="0" y="24" width="168" height="16" fill="#E3EAF2"/>
+    <circle cx="26" cy="20" r="8" fill="#F28C28"/>
+    <rect x="48" y="14" width="56" height="12" rx="6" fill="#0B4F8A"/>
+    <circle cx="140" cy="20" r="6" fill="#9FB1C4"/>
+    <circle cx="84" cy="116" r="54" fill="#E9EFF5" stroke="#B9C7D6" stroke-width="3"/>
+    <circle cx="84" cy="116" r="40" fill="url(#glass)"/>
+    <path d="M52 124 q16 -12 32 0 t32 0" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" opacity=".8"/>
+    <circle cx="70" cy="100" r="6" fill="#FFFFFF" opacity=".7"/>
+  </g>
+
+  <!-- Llave inglesa -->
+  <g transform="translate(34 372) rotate(-72)">
+    <rect x="0" y="-9" width="96" height="18" rx="9" fill="#F28C28"/>
+    <path d="M96 -22 a24 24 0 1 1 0 44 l0 -14 l14 0 l0 -16 l-14 0 z" fill="#F28C28"/>
+  </g>
+
+  <!-- Engranaje -->
+  <g transform="translate(462 300)">
+    <g fill="#0B4F8A">
+      <circle r="24"/>
+      <rect x="-6" y="-34" width="12" height="16" rx="3"/>
+      <rect x="-6" y="18" width="12" height="16" rx="3"/>
+      <rect x="-34" y="-6" width="16" height="12" rx="3"/>
+      <rect x="18" y="-6" width="16" height="12" rx="3"/>
+      <rect x="-6" y="-34" width="12" height="16" rx="3" transform="rotate(45)"/>
+      <rect x="-6" y="18" width="12" height="16" rx="3" transform="rotate(45)"/>
+      <rect x="-34" y="-6" width="16" height="12" rx="3" transform="rotate(45)"/>
+      <rect x="18" y="-6" width="16" height="12" rx="3" transform="rotate(45)"/>
+    </g>
+    <circle r="10" fill="#D9E9F8"/>
+  </g>
+
+  <!-- Chispas -->
+  <g fill="#F28C28">
+    <path d="M70 120 l4 10 l10 4 l-10 4 l-4 10 l-4 -10 l-10 -4 l10 -4 z"/>
+    <path d="M470 196 l3 7 l7 3 l-7 3 l-3 7 l-3 -7 l-7 -3 l7 -3 z"/>
+  </g>
+</svg>
