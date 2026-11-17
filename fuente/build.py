@@ -6,7 +6,7 @@ import json, html, urllib.parse, pathlib
 HERE = pathlib.Path(__file__).resolve().parent
 ROOT = HERE.parent  # raíz del repositorio = carpeta del sitio
 PAGES = HERE / 'pages'
-SITE = 'https://tu-dominio.com/demos/sitio-web-negocio/'  # cambia por el dominio real del portafolio
+SITE = 'https://carlosromero55.github.io/demo-sitio-web-negocio/'  # dirección pública (GitHub Pages)
 WA = '593900000000'
 PRODUCTOS = json.loads((HERE / 'productos.json').read_text())
 CATS = {
@@ -245,7 +245,7 @@ def build():
     # 404: rutas absolutas para que funcione desde cualquier URL inexistente
     if '404.html' in out:
         import re
-        base = '/demos/sitio-web-negocio/'
+        base = urllib.parse.urlparse(SITE).path
         c = out['404.html']
         c = re.sub(r'(href|src|action)="(?!https?:|#|tel:|mailto:|/)([^"]+)"', lambda m: f'{m.group(1)}="{base}{m.group(2)}"', c)
         c = re.sub(r'  <link rel="canonical"[^\n]*\n', '', c)

@@ -1,10 +1,14 @@
 {
   "slug": "sitio-web-negocio",
   "servicioRelacionado": "Diseño de páginas web",
-  "demoUrl": "/demos/sitio-web-negocio/",
-  "imagen": "/demos/sitio-web-negocio/img/capturas/inicio-escritorio.webp",
-  "imagenMovil": "/demos/sitio-web-negocio/img/capturas/inicio-movil.webp",
-  "lighthouse": { "performance": 100, "accessibility": 100, "bestPractices": 100, "seo": 100, "notaSeo": "SEO 100 sin noindex; la demo publicada lleva noindex a propósito (63–66)." },
+  "demoUrl": "https://carlosromero55.github.io/demo-sitio-web-negocio/",
+  "lighthouse": {
+    "performance": 100,
+    "accessibility": 100,
+    "bestPractices": 100,
+    "seo": 100,
+    "notaSeo": "SEO 100 sin noindex; la demo publicada lleva noindex a propósito (63–66)."
+  },
   "es": {
     "titulo": "Sitio web para tienda de repuestos de línea blanca",
     "resumen": "Sitio completo de 7 páginas para Refri House, una tienda ficticia de repuestos y servicio técnico en Guayaquil: catálogo con buscador, cotización por WhatsApp, agenda de técnicos y formulario seguro. Lighthouse 100 en rendimiento, accesibilidad y buenas prácticas.",
@@ -22,7 +26,16 @@
       "Modo oscuro automático y manual",
       "Menú móvil accesible, botón flotante de WhatsApp y página 404 personalizada"
     ],
-    "stack": ["HTML5 semántico", "CSS moderno (custom properties, grid, clamp)", "JavaScript vanilla", "SVG propios", "Schema.org JSON-LD", "Lighthouse", "html-validate", "Playwright"],
+    "stack": [
+      "HTML5 semántico",
+      "CSS moderno (custom properties, grid, clamp)",
+      "JavaScript vanilla",
+      "SVG propios",
+      "Schema.org JSON-LD",
+      "Lighthouse",
+      "html-validate",
+      "Playwright"
+    ],
     "seguridad": [
       "Content Security Policy sin scripts ni estilos en línea",
       "Datos del usuario insertados solo con textContent (sin riesgo de XSS)",
@@ -51,7 +64,16 @@
       "Automatic and manual dark mode",
       "Accessible mobile menu, floating WhatsApp button and custom 404 page"
     ],
-    "stack": ["Semantic HTML5", "Modern CSS (custom properties, grid, clamp)", "Vanilla JavaScript", "Custom SVGs", "Schema.org JSON-LD", "Lighthouse", "html-validate", "Playwright"],
+    "stack": [
+      "Semantic HTML5",
+      "Modern CSS (custom properties, grid, clamp)",
+      "Vanilla JavaScript",
+      "Custom SVGs",
+      "Schema.org JSON-LD",
+      "Lighthouse",
+      "html-validate",
+      "Playwright"
+    ],
     "seguridad": [
       "Content Security Policy with no inline scripts or styles",
       "User input rendered only with textContent (no XSS risk)",

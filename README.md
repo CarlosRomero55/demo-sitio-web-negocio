@@ -2,7 +2,8 @@
 
 Sitio completo para **Refri House**, una tienda **ficticia** de repuestos de línea blanca y servicio técnico en Guayaquil. Forma parte del portafolio de Carlos Romero y sirve para mostrar el servicio **"Diseño de páginas web"**, junto con las demos de citas/facturación e inventario/POS.
 
-- **Ruta en el portafolio:** `public/demos/sitio-web-negocio/` → `/demos/sitio-web-negocio/`
+- **Demo publicada (GitHub Pages):** https://carlosromero55.github.io/demo-sitio-web-negocio/
+- **Caso en el portafolio:** https://carlosromeroportafolio.vercel.app/es/proyectos/sitio-web-tienda-repuestos
 - **Tecnología:** HTML5 + CSS + JavaScript vanilla. No necesita build ni dependencias para publicarse.
 - **Fecha:** noviembre de 2026
 
